@@ -4,3 +4,13 @@ LittleBen project By Odera & Jonathan
 - Framework: Sinatra
 - Using Twitter bootstrap
 - Project managed with asana	
+
+
+Ruby
+ $ sudo gem install sinatra haml thin sqlite3 require_relative
+ 
+ Starting webserver
+ $ thin -R config.ru start
+ 
+ $ ruby -v
+ruby 1.8.7 (2010-01-10 patchlevel 249) [universal-darwin11.0]

@@ -19,20 +19,18 @@
             %span(class="icon-bar")
             %span(class="icon-bar")
             %span(class="icon-bar")
-          %a(class="brand" href="#")
+          %a(class="brand" href="/")
             Little Ben
           .nav-collapse
             %ul(class="nav")
               %li(class="active")
-                %a(href="home")
+                %a(href="/")
                   Home
               %li
                 %a(href="about")
                   About
     .container
-      %h1 Bootstrap starter template
-      %p
-        Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.
-		
+      =yield
+    		
     %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
     %script(src="js/bootstrap.min.js")
