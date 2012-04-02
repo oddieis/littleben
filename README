@@ -7,7 +7,7 @@ LittleBen project By Odera & Jonathan
 
 
 Ruby
- $ sudo gem install sinatra haml thin sqlite3 require_relative
+ $ sudo gem install sinatra haml thin sqlite3 require_relative dm-core dm-timestamps dm-validations dm-migrations dm-sqlite-adapter
  
  Starting webserver
  $ thin -R config.ru start
