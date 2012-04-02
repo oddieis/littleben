@@ -22,13 +22,7 @@
           %a(class="brand" href="/")
             Little Ben
           .nav-collapse
-            %ul(class="nav")
-              %li(class="active")
-                %a(href="/")
-                  Home
-              %li
-                %a(href="about")
-                  About
+            = partial("menu")
     .container
       =yield
     		
