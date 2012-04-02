@@ -1,0 +1,38 @@
+!!!  
+%html  
+  %head
+    %meta(charset="utf-8")
+    %title Bootstrap, from Twitter
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    %link(rel="stylesheet" href="css/bootstrap.css") 
+    %style
+      body {
+      padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    %link(rel="stylesheet" href="css/bootstrap-responsive.css")  
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a(class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse")
+            %span(class="icon-bar")
+            %span(class="icon-bar")
+            %span(class="icon-bar")
+          %a(class="brand" href="#")
+            Little Ben
+          .nav-collapse
+            %ul(class="nav")
+              %li(class="active")
+                %a(href="home")
+                  Home
+              %li
+                %a(href="about")
+                  About
+    .container
+      %h1 Bootstrap starter template
+      %p
+        Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.
+		
+    %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+    %script(src="js/bootstrap.min.js")
