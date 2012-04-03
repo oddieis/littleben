@@ -9,12 +9,23 @@ module Authorization
   end
  
   def logged_in?
-    false
+    session['logged_in']
+    #false
   end
  
   def authorize(username, password)
-    # Insert your logic here to determine if username/password is good
-    true
+    
+    if(username == "jo" && password == "jo")
+      session["logged_in"] = true
+      true
+    else
+      false
+    end
+    
+  end
+  
+  def logout()
+    session["logged_in"] = false
   end
  
   def require_administrative_privileges
