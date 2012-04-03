@@ -3,8 +3,13 @@
     %a(href="/")
       Home
   %li{:class => ("active" if request.path_info == '/about') }
-    %a(href="about")
+    %a(href="/about")
       About
-  %li{:class => ("active" if request.path_info == '/login') }
-    %a(href="login")
-      Login
+  - if !logged_in?
+    %li{:class => ("active" if request.path_info == '/login') }
+      %a(href="/login")
+        Login
+  - else
+    %li{:class => ("active" if request.path_info == '/logout') }
+      %a(href="/logout")
+        Logout
