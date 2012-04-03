@@ -1,7 +1,10 @@
 %ul(class="nav")
-  %li(class="active")
+  %li{:class => ("active" if request.path_info == '/') }
     %a(href="/")
       Home
-  %li
+  %li{:class => ("active" if request.path_info == '/about') }
     %a(href="about")
       About
+  %li{:class => ("active" if request.path_info == '/login') }
+    %a(href="login")
+      Login
