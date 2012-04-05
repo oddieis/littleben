@@ -1,14 +1,42 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<head>
-  <title>LittleBen</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <meta charset='utf-8' />
+    <title>Bootstrap, from Twitter</title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+	<%= csrf_meta_tag %>
+    <link href='css/bootstrap.css' rel='stylesheet' />
+	<%= stylesheet_link_tag :all %>
+    <style>
+      body {
+      padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href='css/bootstrap-responsive.css' rel='stylesheet' />
+  </head>
+  <body>
+    <div class='navbar navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </a>
+          <a class='brand' href='/'>
+            Little Ben
+          </a>
+          <div class='nav-collapse'>
+        	<%= render :partial => 'menu' %>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+    	<%= yield %>
+    </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+	<%= javascript_include_tag :defaults %>
+  </body>
 </html>
