@@ -1,4 +1,4 @@
-class User
+class User < ActiveRecord::Base
     include DataMapper::Resource
     property :id, Serial
     property :formatted_name, String
