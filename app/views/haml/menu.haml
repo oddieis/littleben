@@ -1,0 +1,15 @@
+%ul(class="nav")
+  %li{:class => ("active" if request.path_info == '/') }
+    %a(href="/")
+      Home
+  %li{:class => ("active" if request.path_info == '/about') }
+    %a(href="/about")
+      About
+  - if !logged_in?
+    %li{:class => ("active" if request.path_info == '/login') }
+      %a(href="/login")
+        Login
+  - else
+    %li{:class => ("active" if request.path_info == '/logout') }
+      %a(href="/logout")
+        Logout
