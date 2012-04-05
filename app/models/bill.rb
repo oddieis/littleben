@@ -1,4 +1,4 @@
-class Bill
+class Bill < ActiveRecord::Base
     include DataMapper::Resource
     property :id, Serial
     property :title, String

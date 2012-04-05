@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @bill.title %>
+</p>
+
+<p>
+  <b>Summay:</b>
+  <%= @bill.summay %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @bill.body %>
+</p>
+
+<p>
+  <b>Sponsor:</b>
+  <%= @bill.sponsor_id %>
+</p>
+
+<p>
+  <b>Vote plus:</b>
+  <%= @bill.vote_plus %>
+</p>
+
+<p>
+  <b>Vote minus:</b>
+  <%= @bill.vote_minus %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @bill.created_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_bill_path(@bill) %> |
+<%= link_to 'Back', bills_path %>

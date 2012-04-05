@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  summay: MyText
+  body: MyText
+  sponsor_id: 1
+  vote_plus: 1
+  vote_minus: 1
+  created_at: 2012-04-05 10:23:52
+
+two:
+  title: MyString
+  summay: MyText
+  body: MyText
+  sponsor_id: 1
+  vote_plus: 1
+  vote_minus: 1
+  created_at: 2012-04-05 10:23:52

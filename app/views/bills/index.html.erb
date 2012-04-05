@@ -1,0 +1,35 @@
+<h1>Listing bills</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Summay</th>
+    <th>Body</th>
+    <th>Sponsor</th>
+    <th>Vote plus</th>
+    <th>Vote minus</th>
+    <th>Created at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bills.each do |bill| %>
+  <tr>
+    <td><%= bill.title %></td>
+    <td><%= bill.summay %></td>
+    <td><%= bill.body %></td>
+    <td><%= bill.sponsor_id %></td>
+    <td><%= bill.vote_plus %></td>
+    <td><%= bill.vote_minus %></td>
+    <td><%= bill.created_at %></td>
+    <td><%= link_to 'Show', bill %></td>
+    <td><%= link_to 'Edit', edit_bill_path(bill) %></td>
+    <td><%= link_to 'Destroy', bill, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bill', new_bill_path %>
