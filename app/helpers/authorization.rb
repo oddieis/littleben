@@ -1,4 +1,3 @@
-#encoding: utf-8
 module Authorization
   
   #The current user can't access the current page.
