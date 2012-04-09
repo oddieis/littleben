@@ -1,12 +1,17 @@
 <ul class='nav'>
-  <li>
+  <li <%= if request.path_info == '/' then 'class="active"'.html_safe; end%>>
     <a href='/'>
       Home
     </a>
   </li>
-  <li>
+  <li <%= if request.path_info == '/about' then 'class="active"'.html_safe; end%>>
     <a href='/about'>
       About
+    </a>
+  </li>
+  <li <%= if request.path_info == '/bills' then 'class="active"'.html_safe; end%>>
+    <a href='/bills'>
+      List Bills
     </a>
   </li>
 </ul>
